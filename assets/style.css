@@ -31,7 +31,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: clamp(2rem, 5vw, 5rem);
   color: rgb(230, 227, 227);
   flex-direction: column;
   filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
@@ -70,4 +70,7 @@ b{
 }
 #kontakt_dane{
   font-size: 1.4rem;
+}
+a{
+  color: black;
 }
