@@ -1,0 +1,45 @@
+main{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: calc(65rem + 20rem + 2.5rem); /* Width of aside + width of article + some margin */
+  margin-top: 1rem;
+}
+
+aside, article section{
+  background-color: #fcfcfc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+article section{
+  margin-bottom: 2rem;
+}
+
+main aside {
+  position: sticky;
+  top: 1rem;
+  width: 16rem;
+  align-self: start;
+}
+main aside a{
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+main aside h6{
+  font-size: 2rem;
+}
+
+main article {
+  width: 65rem;
+}
+
+main article section, main aside{
+  padding: 2rem;
+  border-radius: 0.3rem;
+}
+li a, li{
+  transition: color 0.2s linear;
+}
+li a:hover, li:hover{
+  color: rgb(32, 165, 32);
+}

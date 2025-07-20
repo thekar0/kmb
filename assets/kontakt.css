@@ -1,0 +1,16 @@
+main{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#napisz_do_nas{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+}
+#napisz_do_nas a{
+    font-weight: 600;
+    color: rgb(32, 165, 32);
+}

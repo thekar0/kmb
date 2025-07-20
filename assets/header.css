@@ -1,0 +1,112 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+header img {
+    margin-left: 1rem;
+    height: 6rem;
+    padding: 0.25rem;
+    transition: all 0.4s;
+}
+header img:hover{
+    transform: scale(1.06);
+}
+nav {
+    padding: 1rem;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 1rem 0 1rem;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.2s ease, left 0.2s ease;
+}
+
+nav a:hover {
+    color: rgb(32, 165, 32);
+}
+
+nav a:hover::after {
+    width: 100%;
+    background: rgb(32, 165, 32);
+    left: 0;
+}
+
+a:visited {
+    color: black;
+}
+
+.dropdown {
+    padding-bottom: 0.15rem;
+    position: relative;
+    display: inline-block;
+}
+/* ▼▼▼ Smooth Roll Down Animation ▼▼▼ */
+.dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 1.5s ease, padding 0.1s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 999;
+    padding: 0;
+    border-radius: 4px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    max-height: 500px; /* adjust if needed */
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0.5rem 0;
+}
+/* ▲▲▲ Smooth Roll Down Animation ▲▲▲ */
+
+.dropdown:hover > a {
+  color: rgb(32, 165, 32);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: none;
+    margin: 0;
+    white-space: nowrap;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
+    color: rgb(32, 165, 32);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  max-height: 500px;
+  opacity: 1;
+  pointer-events: auto;
+  padding: 0.5rem 0;
+}

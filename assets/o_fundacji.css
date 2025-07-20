@@ -1,0 +1,18 @@
+.o_fundacji_section{
+    margin: auto;
+    width: 50%;
+    background-color: rgb(230, 227, 227);
+    padding: 2rem;
+    border-radius: 0.3rem;
+    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.2));
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.o_fundacji_section img{
+    width: 25%;
+}

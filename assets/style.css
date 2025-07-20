@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{ font-family: 'Roboto';}
+html{scroll-behavior: smooth;}
+hr{ 
+  margin: auto; 
+  border: none;
+  height: 1px;
+  background-color: #c5c5c5;
+}
+
+body{
+    margin: 0;
+    background-color: #f3f3f3;
+    overflow-y: scroll;
+}
+
+#header_image {
+  background-image: url('./images/laka3.jpg'); /* replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 22rem;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+#header_text_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: rgb(230, 227, 227);
+  flex-direction: column;
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.5));
+
+}
+
+#header_text_container h1, #header_text_container h2{
+  margin: -0.75rem;
+}
+#header_text_container h2{
+  font-size: 3.5rem;
+  z-index: -1;
+}
+
+h6{
+  margin: 0;
+  font-size: 3.5rem;
+  color: rgb(32, 165, 32);
+}
+.article_paragraph{
+  font-size: 1.4rem;
+}
+.kontakt_info_box{
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid rgb(32, 165, 32);
+}
+b{
+  color: rgb(32, 165, 32);
+}
+.kontakt_info_h1{
+  margin-bottom: 1rem;
+  color: rgb(32, 165, 32);
+  font-size: 2rem;
+}
+#kontakt_dane{
+  font-size: 1.4rem;
+}
