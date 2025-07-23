@@ -33,4 +33,7 @@
   .zalozyciele_section img{
     width: 90%;
   }
+  #header_image h1{
+    font-size: 100%;
+  }
 }
