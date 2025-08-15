@@ -16,7 +16,7 @@ body{
 }
 
 #header_image {
-  background-image: url('./images/laka3.jpg'); /* replace with actual image path */
+  background-image: url('./images/laka3.webp'); /* replace with actual image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ h6{
 b{
   color: rgb(32, 165, 32);
 }
-.kontakt_info_h1{
+.kontakt_info_h2{
   margin-bottom: 1rem;
   color: rgb(32, 165, 32);
   font-size: 2rem;

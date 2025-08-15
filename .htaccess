@@ -1,0 +1,12 @@
+# Włączanie mod_rewrite
+RewriteEngine On
+
+# Jeśli plik lub katalog istnieje, nie zmieniaj URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Przekierowanie wszystkich żądań na odpowiedni plik .html
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.html [L]
+
+# Opcjonalnie: ustaw domyślną stronę główną
+DirectoryIndex index.html

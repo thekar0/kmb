@@ -16,17 +16,17 @@
     border-radius: 1rem;
     margin-right: 2rem;
 }
-.zalozyciele_section h1, .zalozyciele_section h2, .zalozyciele_section h3{
+.zalozyciele_section h2, .zalozyciele_section h3, .zalozyciele_section h4{
     color: rgb(32, 165, 32);
     margin: 0;
 }
-.zalozyciele_section h1{
+.zalozyciele_section h2{
     font-size: 3rem;
 }
 .zalozyciele_section p, .zalozyciele_section li{
     font-size: 1.2rem;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
   .zalozyciele_section{
     width: 90%;
     flex-direction: column;

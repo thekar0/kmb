@@ -37,17 +37,14 @@ main{
 .oferta_box li {
     font-size: 1.5rem;
     color: black; /* text color */
-    list-style: none;
+    list-style: disc;
     position: relative;
 }
-
-.oferta_box li::before {
-    content: "•";
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
-    color: green; /* bullet color */
-    position: absolute;
-    left: -1em;
+.oferta_box li::marker
+{
+  color: green;
 }
+
 .oferta_box p{
     font-size: 1.6rem;
 }
