@@ -1,6 +1,7 @@
 .o_fundacji_section{
     margin: auto;
-    width: 50%;
+    width: 80%;
+    max-width: 60rem;
     background-color: rgb(230, 227, 227);
     padding: 2rem;
     border-radius: 0.3rem;
@@ -15,4 +16,5 @@
 }
 .o_fundacji_section img{
     width: 25%;
+    min-width: 12rem;
 }
